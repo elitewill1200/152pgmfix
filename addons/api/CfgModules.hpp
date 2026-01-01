@@ -236,4 +236,34 @@ class CfgVehicles {
             sync[] = {};
         };
     };
+
+    class GVAR(playSound): Module_F {
+        scope = 2;
+        displayName = CSTRING(playSound_Module_DisplayName);
+        author = ECSTRING(main,Author);
+        category = QGVAR(mission_setup);
+        icon = "\a3\Modules_F_Curator\Data\iconRadio_ca.paa";
+
+        function = "AcreModules_fnc_playSound";
+        functionPriority = 1;
+        isGlobal = 2;
+        isTriggerActivated = 1;
+
+        // Menu displayed when the module is placed or double-clicked on by Zeus
+        curatorInfoType = "RscDisplayAttributeModuleNuke";
+
+        // Module arguments
+        class Arguments {            
+            class FreqSetup {
+                displayName = CSTRING(playSound_FreqSetup_DisplayName);
+                description = CSTRING(playSound_FreqSetup_Description);
+                defaultValue = "123.45";
+            };            
+        };
+
+        class ModuleDescription: ModuleDescription {
+            description = CSTRING(playSound_Module_Description);
+            sync[] = {};
+        };
+    };
 };

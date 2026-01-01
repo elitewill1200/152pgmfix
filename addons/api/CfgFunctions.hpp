@@ -149,6 +149,7 @@ class CfgFunctions {
         class GVAR(mission_setup) {
             PATHTO_FNC(basicMissionSetup);
             PATHTO_FNC(nameChannels);
+            PATHTO_FNC(playSound);
         };
     };
 };

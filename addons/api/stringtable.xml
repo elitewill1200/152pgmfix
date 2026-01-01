@@ -543,5 +543,18 @@
             <Chinesesimp>蓝方</Chinesesimp>
             <Turkish>BLUFOR</Turkish>
         </Key>
+        <!-- Play Sound Module-->
+        <Key ID="STR_ACRE_api_playSound_Module_DisplayName">
+            <English>Play Sound</English>            
+        </Key>
+        <Key ID="STR_ACRE_api_playSound_FreqSetup_DisplayName">
+            <English>Frequency</English>            
+        </Key>
+        <Key ID="STR_ACRE_api_playSound_FreqSetup_Description">
+            <English>Enter the frequency to play the sound on</English>            
+        </Key>
+        <Key ID="STR_ACRE_api_playSound_Module_Description">
+            <English>This module plays a sound on a frequency when triggered</English>            
+        </Key>
     </Package>
 </Project>
